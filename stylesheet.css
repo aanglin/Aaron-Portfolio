@@ -11,8 +11,13 @@ header{
     padding: 20px;
     border: 2px solid black;
     background-color: blue;
+    color: black;
 
 }
+a{
+    color: black;
+}
+
 .portrait{
     padding: 1%;
 }
@@ -52,9 +57,12 @@ h1 {
     margin: 5px;
     width: 100%;
     justify-content: center;
+    
+}
 
- }
-
+.work a img{
+    margin: 25px;
+}
  footer{
      padding: 1%;
      border: 2px solid black;
@@ -63,5 +71,42 @@ h1 {
  
  ul{
 display: flex;
+flex-direction: row;
 justify-content: space-around;
  }
+
+ @media screen and (max-width: 992px) {
+   
+ }
+  /* Cards are stacked on top of each other at 768px or smaller */
+  @media screen and (max-width: 768px) {
+    .work {
+        display: flex;
+       flex-direction: column;
+       margin: 5px;
+       width: 100%;
+       justify-content: center;
+       
+}
+}
+@media screen and (max-width: 576px) {
+    .work {
+      display: flex;
+      flex-direction: column;
+      margin: 5px;
+      width: 200px;
+      justify-content: center;
+    }
+    .work a img{
+        margin: 25px;
+        width: 200px;
+        height: 100px;
+  } 
+  ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+     }
+} 
+    
+  
